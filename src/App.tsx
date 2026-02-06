@@ -366,7 +366,7 @@ function App() {
             {/* Free Plan */}
             <div className="bg-white rounded-2xl p-8 border-2 border-gray-200">
               <h3 className="text-2xl font-bold mb-2">무료</h3>
-              <p className="text-gray-500 mb-6">개인 사용자에게 충분해요</p>
+              <p className="text-amber-500 font-semibold mb-6">개인 사용자에게 충분해요 ✨</p>
               <div className="text-4xl font-bold mb-8">₩0<span className="text-lg font-normal text-gray-500">/월</span></div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-600">
