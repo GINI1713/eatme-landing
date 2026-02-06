@@ -426,7 +426,7 @@ function HomePage() {
               <p className="text-amber-500 font-semibold mb-4">개인 사용자에게 충분해요 ✨</p>
               <div className="text-4xl font-bold mb-4">₩0<span className="text-lg font-normal text-gray-500">/월</span></div>
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                AI 식단 분석, 일일·주간·월간 리포트, 1:1 케어 연결 등 핵심 기능을 무료로 이용할 수 있습니다. 하루 10개 업로드, 커넥트 5명까지 지원하며 일상 사용에 충분합니다.
+                AI 식단 분석, 일일·주간·월간 리포트 등 핵심 기능을 무료로 이용할 수 있습니다. 코치에게 식단을 공유받는 건 무제한, 내가 다른 사람을 관리하는 건 5명까지 가능합니다.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-600">
@@ -439,10 +439,14 @@ function HomePage() {
                   <span className="text-green-500">✓</span> 일일/주간/월간 리포트
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
-                  <span className="text-green-500">✓</span> 1:1 케어 연결 (멤버로서)
+                  <span className="text-green-500">✓</span> 코치에게 내 식단 공유 (무제한)
                 </li>
-                <li className="flex items-center gap-2 text-gray-600">
-                  <span className="text-green-500">✓</span> 코치로서 멤버 관리 <span className="text-amber-600 font-medium">5명까지</span>
+                <li className="flex items-start gap-2 text-gray-600">
+                  <span className="text-green-500 mt-0.5">✓</span>
+                  <div>
+                    <span>다른 사람 식단 관리 <span className="text-amber-600 font-medium">5명까지</span></span>
+                    <p className="text-xs text-gray-400 mt-0.5">예: 자녀, 부모님, 친구 등 가족/지인 케어</p>
+                  </div>
                 </li>
                 <li className="flex items-center gap-2 text-gray-400">
                   <span>✗</span> Notion/Slack/Sheets 연동
