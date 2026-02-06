@@ -334,16 +334,17 @@ function HomePage() {
               <div>
                 <h4 className="font-semibold mb-3 text-amber-600">코치인 경우</h4>
                 <ol className="text-gray-600 space-y-2 text-sm">
-                  <li>1. 커넥트 탭에서 "초대하기" 클릭</li>
-                  <li>2. 생성된 초대 코드를 회원에게 전달</li>
-                  <li>3. 회원이 수락하면 연결 완료!</li>
+                  <li>1. 커넥트 탭에서 "새 케어 연결 만들기" 클릭</li>
+                  <li>2. 회원 닉네임 또는 이메일로 검색</li>
+                  <li>3. 연결 요청 보내기</li>
+                  <li>4. 회원이 수락하면 연결 완료!</li>
                 </ol>
               </div>
               <div>
                 <h4 className="font-semibold mb-3 text-amber-600">회원인 경우</h4>
                 <ol className="text-gray-600 space-y-2 text-sm">
-                  <li>1. 코치에게 받은 초대 코드 입력</li>
-                  <li>2. 공유 범위 설정 (전체/최근 N일)</li>
+                  <li>1. 코치가 연결 요청을 보내면 알림 수신</li>
+                  <li>2. 커넥트 탭에서 받은 요청 확인</li>
                   <li>3. 수락하면 코치가 내 식단을 볼 수 있어요</li>
                 </ol>
               </div>
@@ -508,7 +509,7 @@ function HomePage() {
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
               <h3 className="font-bold mb-2">Q. 코치 연결은 어떻게 하나요?</h3>
-              <p className="text-gray-600">코치가 앱에서 초대 코드를 생성해서 보내면, 회원이 코드를 입력하고 수락하면 연결됩니다.</p>
+              <p className="text-gray-600">코치가 회원을 검색해서 연결 요청을 보내면, 회원이 알림을 받고 수락하면 연결됩니다.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
               <h3 className="font-bold mb-2">Q. 중간에 연결을 끊을 수 있나요?</h3>
