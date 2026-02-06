@@ -110,9 +110,59 @@ function NotionGuide() {
                   </p>
                 </div>
 
-                <div className="bg-amber-50 rounded-lg p-4">
-                  <p className="text-amber-800 text-sm">
-                    💡 <strong>팁:</strong> 데이터베이스 속성(컬럼)은 EatMe가 자동으로 생성해주므로, 빈 데이터베이스로 두셔도 됩니다!
+                <div>
+                  <h3 className="font-semibold mb-2">1-5. 데이터베이스 속성(컬럼) 추가하기</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    아래 속성들을 데이터베이스에 추가하세요. <strong>속성 이름을 정확히</strong> 입력해야 합니다!
+                  </p>
+                  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead className="bg-gray-50">
+                        <tr>
+                          <th className="px-3 py-2 text-left font-medium">속성 이름</th>
+                          <th className="px-3 py-2 text-left font-medium">타입</th>
+                          <th className="px-3 py-2 text-left font-medium">필수</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100">
+                        <tr>
+                          <td className="px-3 py-2 font-mono text-amber-600">제목</td>
+                          <td className="px-3 py-2">Title (기본값)</td>
+                          <td className="px-3 py-2">✅ 필수</td>
+                        </tr>
+                        <tr>
+                          <td className="px-3 py-2 font-mono text-amber-600">닉네임</td>
+                          <td className="px-3 py-2">Text</td>
+                          <td className="px-3 py-2">권장</td>
+                        </tr>
+                        <tr>
+                          <td className="px-3 py-2 font-mono text-amber-600">촬영 일시</td>
+                          <td className="px-3 py-2">Text</td>
+                          <td className="px-3 py-2">권장</td>
+                        </tr>
+                        <tr>
+                          <td className="px-3 py-2 font-mono text-amber-600">식사 구분</td>
+                          <td className="px-3 py-2">Select</td>
+                          <td className="px-3 py-2">권장</td>
+                        </tr>
+                        <tr>
+                          <td className="px-3 py-2 font-mono text-amber-600">코멘트</td>
+                          <td className="px-3 py-2">Text</td>
+                          <td className="px-3 py-2">선택</td>
+                        </tr>
+                        <tr>
+                          <td className="px-3 py-2 font-mono text-amber-600">사진</td>
+                          <td className="px-3 py-2">Files & media</td>
+                          <td className="px-3 py-2">권장</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="bg-red-50 rounded-lg p-4">
+                  <p className="text-red-800 text-sm">
+                    ⚠️ <strong>주의:</strong> 속성 이름이 다르면 데이터가 저장되지 않습니다! 위 표의 이름을 <strong>정확히</strong> 복사해서 사용하세요.
                   </p>
                 </div>
               </div>
