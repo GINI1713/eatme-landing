@@ -202,8 +202,13 @@ function NotionGuide() {
                   <ul className="text-gray-600 text-sm space-y-2 mb-3">
                     <li>• <strong>이름:</strong> "EatMe Coach" (원하는 이름)</li>
                     <li>• <strong>연결된 워크스페이스:</strong> 본인 워크스페이스 선택</li>
-                    <li>• <strong>유형:</strong> 내부 (Internal)</li>
+                    <li>• <strong>유형:</strong> <span className="text-amber-600 font-semibold">내부 (Internal)</span> ← 반드시 내부로!</li>
                   </ul>
+                  <div className="bg-amber-50 rounded-lg p-3 mb-3">
+                    <p className="text-amber-800 text-xs">
+                      💡 "내부"는 본인 워크스페이스 전용입니다. "공개"는 다른 사람에게 배포하는 앱용이라 복잡한 인증 과정이 필요해요.
+                    </p>
+                  </div>
                   <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
                     <div className="text-center">
                       <p className="text-sm">Integration 정보 입력 화면</p>
