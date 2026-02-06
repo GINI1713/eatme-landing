@@ -17,7 +17,7 @@ function App() {
             <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
           </div>
           <a
-            href="https://eatme-coach.up.railway.app"
+            href="https://eatme.co.kr"
             className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
           >
             시작하기
@@ -335,7 +335,7 @@ function App() {
                   <span>✗</span> Google Sheets 연동
                 </li>
               </ul>
-              <a href="https://eatme-coach.up.railway.app" className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-full font-medium transition-colors">
+              <a href="https://eatme.co.kr" className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-full font-medium transition-colors">
                 무료로 시작하기
               </a>
             </div>
@@ -372,7 +372,7 @@ function App() {
                   <span>✓</span> Google Sheets 연동
                 </li>
               </ul>
-              <a href="https://eatme-coach.up.railway.app" className="block text-center bg-white hover:bg-gray-100 text-amber-600 py-3 rounded-full font-medium transition-colors">
+              <a href="https://eatme.co.kr" className="block text-center bg-white hover:bg-gray-100 text-amber-600 py-3 rounded-full font-medium transition-colors">
                 PRO 시작하기
               </a>
             </div>
@@ -424,7 +424,7 @@ function App() {
             사진 한 장으로 시작하는 스마트 식단 관리
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://eatme-coach.up.railway.app" className="inline-flex items-center justify-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-colors">
+            <a href="https://eatme.co.kr" className="inline-flex items-center justify-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-colors">
               무료로 시작하기 →
             </a>
           </div>
@@ -440,8 +440,8 @@ function App() {
               <span className="font-bold text-white text-xl">EatMe Coach</span>
             </div>
             <div className="flex gap-6 text-sm">
-              <a href="https://eatme-coach.up.railway.app/privacy" className="hover:text-white transition-colors">개인정보처리방침</a>
-              <a href="https://eatme-coach.up.railway.app/terms" className="hover:text-white transition-colors">이용약관</a>
+              <a href="https://eatme.co.kr/privacy" className="hover:text-white transition-colors">개인정보처리방침</a>
+              <a href="https://eatme.co.kr/terms" className="hover:text-white transition-colors">이용약관</a>
               <a href="mailto:support@eatme.coach" className="hover:text-white transition-colors">문의하기</a>
             </div>
           </div>
