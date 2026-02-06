@@ -162,7 +162,7 @@ function NotionGuide() {
 
                 <div className="bg-red-50 rounded-lg p-4">
                   <p className="text-red-800 text-sm">
-                    ⚠️ <strong>주의:</strong> 속성 이름이 다르면 데이터가 저장되지 않습니다! 위 표의 이름을 <strong>정확히</strong> 복사해서 사용하세요.
+                    ⚠️ <strong>주의:</strong> 속성 이름이 다르면 데이터가 저장되지 않습니다! 위 표의 이름을 <strong>정확히</strong> 복사해서 사용하세요. <strong>띄어쓰기</strong>도 정확히 맞춰야 합니다! (예: "촬영 일시" ⭕ / "촬영일시" ❌)
                   </p>
                 </div>
               </div>
