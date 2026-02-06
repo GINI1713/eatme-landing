@@ -308,8 +308,8 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">1</div>
-              <h3 className="font-bold mb-2">앱 다운로드</h3>
-              <p className="text-gray-600 text-sm">App Store 또는 Google Play에서 EatMe Coach 검색</p>
+              <h3 className="font-bold mb-2">웹사이트 접속</h3>
+              <p className="text-gray-600 text-sm">eatme.co.kr 접속 후 홈화면에 추가하면 앱처럼 사용!</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">2</div>
