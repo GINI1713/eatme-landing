@@ -349,6 +349,95 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* 자동화 연동 가이드 */}
+          <div className="mt-8 bg-white rounded-2xl p-8 border border-gray-200">
+            <h3 className="text-xl font-bold mb-2 text-center">⚡ PRO 모드: 자동화 연동</h3>
+            <p className="text-gray-500 text-sm text-center mb-8">회원이 식사 사진을 올리면, 코치의 외부 서비스로 자동 전송됩니다</p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Notion */}
+              <div className="bg-gray-50 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl">📝</span>
+                  <h4 className="font-bold">Notion 연동</h4>
+                </div>
+                <p className="text-gray-600 text-sm mb-4">회원별 식단 기록이 Notion 데이터베이스에 자동 저장</p>
+                <div className="bg-white rounded-lg p-3 text-xs text-gray-500 space-y-1">
+                  <p><strong>전송 데이터:</strong></p>
+                  <p>• 회원 이름/닉네임</p>
+                  <p>• 식사 시간</p>
+                  <p>• 음식 사진 URL</p>
+                  <p>• AI 분석 결과 (칼로리, 영양소)</p>
+                  <p>• 기분 이모지</p>
+                </div>
+                <div className="mt-4 text-xs text-gray-500">
+                  <p className="font-semibold mb-1">설정 방법:</p>
+                  <ol className="space-y-1">
+                    <li>1. Notion에서 Integration 생성</li>
+                    <li>2. 데이터베이스 ID 복사</li>
+                    <li>3. 설정 → 자동화 → Notion 연결</li>
+                  </ol>
+                </div>
+              </div>
+
+              {/* Slack */}
+              <div className="bg-gray-50 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl">💬</span>
+                  <h4 className="font-bold">Slack 연동</h4>
+                </div>
+                <p className="text-gray-600 text-sm mb-4">회원 식사 기록이 Slack 채널에 실시간 알림</p>
+                <div className="bg-white rounded-lg p-3 text-xs text-gray-500 space-y-1">
+                  <p><strong>알림 내용:</strong></p>
+                  <p>• 회원 이름</p>
+                  <p>• 식사 시간</p>
+                  <p>• 음식 사진 썸네일</p>
+                  <p>• 칼로리 요약</p>
+                  <p>• 앱 바로가기 링크</p>
+                </div>
+                <div className="mt-4 text-xs text-gray-500">
+                  <p className="font-semibold mb-1">설정 방법:</p>
+                  <ol className="space-y-1">
+                    <li>1. Slack에서 Incoming Webhook 생성</li>
+                    <li>2. Webhook URL 복사</li>
+                    <li>3. 설정 → 자동화 → Slack 연결</li>
+                  </ol>
+                </div>
+              </div>
+
+              {/* Google Sheets */}
+              <div className="bg-gray-50 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl">📊</span>
+                  <h4 className="font-bold">Google Sheets 연동</h4>
+                </div>
+                <p className="text-gray-600 text-sm mb-4">스프레드시트에 데이터 축적 → 차트/분석 가능</p>
+                <div className="bg-white rounded-lg p-3 text-xs text-gray-500 space-y-1">
+                  <p><strong>저장 컬럼:</strong></p>
+                  <p>• 날짜/시간</p>
+                  <p>• 회원 이름</p>
+                  <p>• 음식명</p>
+                  <p>• 칼로리/탄단지</p>
+                  <p>• 사진 URL</p>
+                </div>
+                <div className="mt-4 text-xs text-gray-500">
+                  <p className="font-semibold mb-1">설정 방법:</p>
+                  <ol className="space-y-1">
+                    <li>1. Google Sheets에서 Apps Script 열기</li>
+                    <li>2. 웹 앱으로 배포하여 URL 생성</li>
+                    <li>3. 설정 → 자동화 → Sheets 연결</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-amber-50 rounded-xl p-4 text-center">
+              <p className="text-sm text-amber-800">
+                💡 <strong>작동 원리:</strong> 연결된 회원이 식사를 기록하면 → 코치의 외부 서비스로 자동 Webhook 전송 → 별도 작업 없이 데이터 축적
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
