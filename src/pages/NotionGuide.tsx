@@ -33,11 +33,20 @@ function NotionGuide() {
           </div>
 
           {/* 예상 소요 시간 */}
-          <div className="bg-blue-50 rounded-xl p-4 mb-8 flex items-center gap-3">
+          <div className="bg-blue-50 rounded-xl p-4 mb-4 flex items-center gap-3">
             <span className="text-2xl">⏱️</span>
             <div>
               <p className="font-semibold text-blue-900">예상 소요 시간: 약 10분</p>
               <p className="text-blue-700 text-sm">Notion 계정이 있다면 바로 시작할 수 있어요</p>
+            </div>
+          </div>
+
+          {/* 데스크탑 권장 팁 */}
+          <div className="bg-gray-100 rounded-xl p-4 mb-8 flex items-center gap-3">
+            <span className="text-2xl">💻</span>
+            <div>
+              <p className="font-semibold text-gray-900">데스크탑(PC/Mac)에서 설정하세요!</p>
+              <p className="text-gray-600 text-sm">모바일보다 데스크탑 버전에서 설정하는 게 훨씬 편합니다</p>
             </div>
           </div>
 
