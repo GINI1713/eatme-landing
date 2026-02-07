@@ -111,6 +111,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     식단 알림을 받을 채널로 이동하세요. 새 채널을 만들어도 됩니다. (예: <strong>#식단관리</strong>)
                   </p>
+                  <img
+                    src="/guide-images/slack-step1-2.png"
+                    alt="채널 선택"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div>
@@ -118,6 +124,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     채널 이름을 클릭 → 상단 탭에서 <strong>"통합"</strong> (또는 "Integrations") 클릭
                   </p>
+                  <img
+                    src="/guide-images/slack-step1-3.png"
+                    alt="채널 설정 - 통합 탭"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div>
@@ -125,6 +137,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     <strong>"앱 추가"</strong> (Add an App) 버튼을 클릭하세요.
                   </p>
+                  <img
+                    src="/guide-images/slack-step1-4.png"
+                    alt="앱 추가 버튼"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div>
@@ -132,6 +150,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     검색창에 <strong>"Incoming WebHooks"</strong>를 입력하고, 해당 앱을 <strong>"추가"</strong>하세요.
                   </p>
+                  <img
+                    src="/guide-images/slack-step1-5.png"
+                    alt="Incoming WebHooks 검색"
+                    className="rounded-lg border border-gray-200 w-full mb-3"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                   <div className="bg-amber-50 rounded-lg p-4">
                     <p className="text-amber-800 text-sm">
                       💡 <strong>참고:</strong> "Incoming WebHooks"는 Slack에서 공식 제공하는 앱입니다. 별도 설치 없이 바로 사용 가능해요!
@@ -155,6 +179,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     Incoming WebHooks 앱을 추가하면 Slack 앱 디렉토리 페이지가 열립니다.
                   </p>
+                  <img
+                    src="/guide-images/slack-step2-1.png"
+                    alt="Slack 앱 디렉토리"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div>
@@ -162,6 +192,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     <strong>"Add to Slack"</strong> 버튼을 클릭하세요.
                   </p>
+                  <img
+                    src="/guide-images/slack-step2-2.png"
+                    alt="Add to Slack 버튼"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div>
@@ -169,6 +205,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     알림을 받을 채널을 드롭다운에서 선택하고 <strong>"Add Incoming WebHooks integration"</strong>을 클릭하세요.
                   </p>
+                  <img
+                    src="/guide-images/slack-step2-3.png"
+                    alt="채널 선택 드롭다운"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div>
@@ -176,6 +218,12 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     설정 페이지에서 <strong>"Webhook URL"</strong>을 찾으세요. 아래와 같은 형식입니다:
                   </p>
+                  <img
+                    src="/guide-images/slack-step2-4.png"
+                    alt="Webhook URL 위치"
+                    className="rounded-lg border border-gray-200 w-full mb-3"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                   <div className="bg-gray-900 text-green-400 rounded-lg p-4 font-mono text-sm overflow-x-auto">
                     https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
                   </div>
@@ -195,19 +243,20 @@ function SlackGuide() {
                 <div>
                   <h3 className="font-semibold mb-2">3-1. Webhook URL 확인</h3>
                   <p className="text-gray-600 text-sm mb-3">
-                    채널 선택 후 페이지로 돌아오면, <strong>"Webhook URLs for Your Workspace"</strong> 섹션에
-                    새 URL이 추가되어 있습니다.
+                    설정 페이지에서 <strong>"Webhook URL"</strong>을 찾아서 복사하세요.
                   </p>
+                  <img
+                    src="/guide-images/slack-step3-1.png"
+                    alt="Webhook URL 복사"
+                    className="rounded-lg border border-gray-200 w-full mb-3"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                   <div className="bg-gray-900 text-green-400 rounded-lg p-4 font-mono text-sm overflow-x-auto">
                     https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="font-semibold mb-2">3-2. "Copy" 버튼으로 URL 복사</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    URL 오른쪽의 <strong>"Copy"</strong> 버튼을 클릭하여 복사하세요.
-                  </p>
                   <div className="bg-red-50 rounded-lg p-4">
                     <p className="text-red-800 text-sm">
                       ⚠️ <strong>중요:</strong> 이 URL은 비밀번호처럼 취급하세요! 이 URL을 아는 사람은 누구나 채널에 메시지를 보낼 수 있습니다.
@@ -234,17 +283,29 @@ function SlackGuide() {
                 </div>
 
                 <div>
-                  <h3 className="font-semibold mb-2">4-2. 설정 → 자동화 연동</h3>
+                  <h3 className="font-semibold mb-2">4-2. 설정 → 코치 연동 설정</h3>
                   <p className="text-gray-600 text-sm mb-3">
-                    프로필 아이콘 → 설정 → <strong>"자동화 연동"</strong> 섹션으로 이동하세요.
+                    프로필 아이콘 → 설정 → <strong>"코치 연동 설정"</strong> 섹션으로 이동하세요.
                   </p>
+                  <img
+                    src="/guide-images/slack-step4-2.png"
+                    alt="EatMe 설정 화면"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div>
                   <h3 className="font-semibold mb-2">4-3. Slack Webhook URL 입력</h3>
                   <p className="text-gray-600 text-sm mb-3">
-                    Slack 연동 입력란에 복사한 <strong>Webhook URL</strong>을 붙여넣고 <strong>"연결하기"</strong>를 누르세요.
+                    Slack 연동 입력란에 복사한 <strong>Webhook URL</strong>을 붙여넣고 <strong>"저장"</strong>을 누르세요.
                   </p>
+                  <img
+                    src="/guide-images/slack-step4-3.png"
+                    alt="Slack URL 입력"
+                    className="rounded-lg border border-gray-200 w-full"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
                 </div>
 
                 <div className="bg-green-50 rounded-lg p-4">
