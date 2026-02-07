@@ -161,12 +161,11 @@ function SheetsGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     <strong>"새 스프레드시트 시작하기"</strong>에서 <strong>"빈 문서"</strong>를 클릭하세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">새 스프레드시트 만들기</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/sheets-step1-2.png</p>
-                    </div>
-                  </div>
+                  <img
+                    src={import.meta.env.BASE_URL + "guide-images/sheets-step1-2.png"}
+                    alt="새 스프레드시트 만들기"
+                    className="rounded-lg border border-gray-200 w-full"
+                  />
                 </div>
 
                 <div>
@@ -193,12 +192,11 @@ function SheetsGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     상단 메뉴에서 <strong>확장 프로그램</strong> → <strong>Apps Script</strong>를 클릭하세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">확장 프로그램 → Apps Script 메뉴</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/sheets-step2-1.png</p>
-                    </div>
-                  </div>
+                  <img
+                    src={import.meta.env.BASE_URL + "guide-images/sheets-step2-1.png"}
+                    alt="확장 프로그램 → Apps Script 메뉴"
+                    className="rounded-lg border border-gray-200 w-full"
+                  />
                 </div>
 
                 <div>
@@ -274,12 +272,11 @@ function SheetsGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     오른쪽 상단의 <strong>"배포"</strong> 버튼 → <strong>"새 배포"</strong>를 클릭하세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">배포 → 새 배포 메뉴</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/sheets-step4-1.png</p>
-                    </div>
-                  </div>
+                  <img
+                    src={import.meta.env.BASE_URL + "guide-images/sheets-step4-1.png"}
+                    alt="배포 → 새 배포 메뉴"
+                    className="rounded-lg border border-gray-200 w-full"
+                  />
                 </div>
 
                 <div>
