@@ -112,7 +112,7 @@ function SlackGuide() {
                     식단 알림을 받을 채널로 이동하세요. 새 채널을 만들어도 됩니다. (예: <strong>#식단관리</strong>)
                   </p>
                   <img
-                    src="/guide-images/slack-step1-2.png"
+                    src={import.meta.env.BASE_URL + "guide-images/slack-step1-2.png"}
                     alt="채널 선택"
                     className="rounded-lg border border-gray-200 w-full"
                     onError={(e) => { e.currentTarget.style.display = 'none' }}
@@ -125,7 +125,7 @@ function SlackGuide() {
                     채널 이름을 클릭 → 상단 탭에서 <strong>"통합"</strong> (또는 "Integrations") 클릭
                   </p>
                   <img
-                    src="/guide-images/slack-step1-3.png"
+                    src={import.meta.env.BASE_URL + "guide-images/slack-step1-3.png"}
                     alt="채널 설정 - 통합 탭"
                     className="rounded-lg border border-gray-200 w-full"
                     onError={(e) => { e.currentTarget.style.display = 'none' }}
@@ -145,7 +145,7 @@ function SlackGuide() {
                     검색창에 <strong>"Incoming WebHooks"</strong>를 입력하고, 해당 앱을 <strong>"추가"</strong>하세요.
                   </p>
                   <img
-                    src="/guide-images/slack-step1-5.png"
+                    src={import.meta.env.BASE_URL + "guide-images/slack-step1-5.png"}
                     alt="Incoming WebHooks 검색"
                     className="rounded-lg border border-gray-200 w-full mb-3"
                     onError={(e) => { e.currentTarget.style.display = 'none' }}
@@ -188,7 +188,7 @@ function SlackGuide() {
                     알림을 받을 채널을 드롭다운에서 선택하고 <strong>"Add Incoming WebHooks integration"</strong>을 클릭하세요.
                   </p>
                   <img
-                    src="/guide-images/slack-step2-3.png"
+                    src={import.meta.env.BASE_URL + "guide-images/slack-step2-3.png"}
                     alt="채널 선택 드롭다운"
                     className="rounded-lg border border-gray-200 w-full"
                     onError={(e) => { e.currentTarget.style.display = 'none' }}
@@ -201,7 +201,7 @@ function SlackGuide() {
                     설정 페이지에서 <strong>"Webhook URL"</strong>을 찾으세요. 아래와 같은 형식입니다:
                   </p>
                   <img
-                    src="/guide-images/slack-step2-4.png"
+                    src={import.meta.env.BASE_URL + "guide-images/slack-step2-4.png"}
                     alt="Webhook URL 위치"
                     className="rounded-lg border border-gray-200 w-full mb-3"
                     onError={(e) => { e.currentTarget.style.display = 'none' }}
@@ -271,7 +271,7 @@ function SlackGuide() {
                     Slack 연동 입력란에 복사한 <strong>Webhook URL</strong>을 붙여넣고 <strong>"저장"</strong>을 누르세요.
                   </p>
                   <img
-                    src="/guide-images/slack-step4-3.png"
+                    src={import.meta.env.BASE_URL + "guide-images/slack-step4-3.png"}
                     alt="Slack URL 입력"
                     className="rounded-lg border border-gray-200 w-full"
                     onError={(e) => { e.currentTarget.style.display = 'none' }}
