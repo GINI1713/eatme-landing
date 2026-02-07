@@ -55,14 +55,7 @@ function NotionGuide() {
             <h2 className="font-bold text-lg mb-4">✨ 완성 후 이렇게 됩니다</h2>
             <div className="bg-white rounded-xl p-4 border border-gray-200">
               <p className="text-gray-600 text-sm mb-4">회원이 식사 사진을 업로드하면, Notion에 자동으로 기록됩니다:</p>
-              {/* 이미지 플레이스홀더 */}
-              <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center text-gray-400">
-                <div className="text-center">
-                  <p className="text-4xl mb-2">📸</p>
-                  <p className="text-sm">Notion 데이터베이스 예시 이미지</p>
-                  <p className="text-xs text-gray-400 mt-1">guide-images/notion-result.png</p>
-                </div>
-              </div>
+              <img src="/eatme-landing/guide-images/notion-result.png" alt="Notion 데이터베이스 예시" className="rounded-lg w-full" />
             </div>
           </div>
 
@@ -90,12 +83,7 @@ function NotionGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     왼쪽 사이드바 하단의 <strong>"+ 새 페이지"</strong> 버튼을 클릭하세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">새 페이지 만들기 버튼 위치</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/notion-step1-2.png</p>
-                    </div>
-                  </div>
+                  <img src="/eatme-landing/guide-images/notion-step1-2.png" alt="새 페이지 만들기 버튼" className="rounded-lg w-full border border-gray-200" />
                 </div>
 
                 <div>
@@ -104,12 +92,7 @@ function NotionGuide() {
                     페이지 타입 선택 화면에서 <strong>"데이터베이스 - 전체 페이지"</strong>를 선택하세요.
                     (테이블, 보드, 갤러리 중 원하는 형태로 선택 가능)
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">데이터베이스 타입 선택 화면</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/notion-step1-3.png</p>
-                    </div>
-                  </div>
+                  <img src="/eatme-landing/guide-images/notion-step1-3.png" alt="데이터베이스 타입 선택" className="rounded-lg w-full border border-gray-200" />
                 </div>
 
                 <div>
@@ -198,12 +181,7 @@ function NotionGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     <strong>"+ 새 API 통합 만들기"</strong> (또는 "+ New integration") 버튼을 클릭하세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">새 통합 만들기 버튼</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/notion-step2-2.png</p>
-                    </div>
-                  </div>
+                  <img src="/eatme-landing/guide-images/notion-step2-2.png" alt="새 통합 만들기 버튼" className="rounded-lg w-full border border-gray-200" />
                 </div>
 
                 <div>
@@ -218,12 +196,7 @@ function NotionGuide() {
                       💡 "내부/Internal/Private"는 본인 워크스페이스 전용입니다. "공개/Public"은 선택하지 마세요!
                     </p>
                   </div>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">Integration 정보 입력 화면</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/notion-step2-3.png</p>
-                    </div>
-                  </div>
+                  <img src="/eatme-landing/guide-images/notion-step2-3.png" alt="Integration 정보 입력" className="rounded-lg w-full border border-gray-200" />
                 </div>
 
                 <div>
@@ -270,12 +243,7 @@ function NotionGuide() {
                     메뉴에서 <strong>"+ 연결 추가"</strong> (또는 "+ Add connections")를 클릭하고,
                     방금 만든 <strong>"EatMe Coach"</strong> Integration을 선택하세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">연결 추가 메뉴</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/notion-step3-3.png</p>
-                    </div>
-                  </div>
+                  <img src="/eatme-landing/guide-images/notion-step3-3.png" alt="연결 추가 메뉴" className="rounded-lg w-full border border-gray-200" />
                 </div>
 
                 <div className="bg-green-50 rounded-lg p-4">
@@ -348,12 +316,7 @@ function NotionGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     설정 페이지에서 스크롤하여 <strong>"자동화 연동"</strong> 섹션을 찾으세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">자동화 연동 섹션 위치</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/notion-step5-3.png</p>
-                    </div>
-                  </div>
+                  <img src="/eatme-landing/guide-images/notion-step5-3.png" alt="자동화 연동 섹션" className="rounded-lg w-full border border-gray-200" />
                 </div>
 
                 <div>
