@@ -137,12 +137,6 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     <strong>"앱 추가"</strong> (Add an App) 버튼을 클릭하세요.
                   </p>
-                  <img
-                    src="/guide-images/slack-step1-4.png"
-                    alt="앱 추가 버튼"
-                    className="rounded-lg border border-gray-200 w-full"
-                    onError={(e) => { e.currentTarget.style.display = 'none' }}
-                  />
                 </div>
 
                 <div>
@@ -179,12 +173,6 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     Incoming WebHooks 앱을 추가하면 Slack 앱 디렉토리 페이지가 열립니다.
                   </p>
-                  <img
-                    src="/guide-images/slack-step2-1.png"
-                    alt="Slack 앱 디렉토리"
-                    className="rounded-lg border border-gray-200 w-full"
-                    onError={(e) => { e.currentTarget.style.display = 'none' }}
-                  />
                 </div>
 
                 <div>
@@ -192,12 +180,6 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     <strong>"Add to Slack"</strong> 버튼을 클릭하세요.
                   </p>
-                  <img
-                    src="/guide-images/slack-step2-2.png"
-                    alt="Add to Slack 버튼"
-                    className="rounded-lg border border-gray-200 w-full"
-                    onError={(e) => { e.currentTarget.style.display = 'none' }}
-                  />
                 </div>
 
                 <div>
@@ -245,12 +227,6 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     설정 페이지에서 <strong>"Webhook URL"</strong>을 찾아서 복사하세요.
                   </p>
-                  <img
-                    src="/guide-images/slack-step3-1.png"
-                    alt="Webhook URL 복사"
-                    className="rounded-lg border border-gray-200 w-full mb-3"
-                    onError={(e) => { e.currentTarget.style.display = 'none' }}
-                  />
                   <div className="bg-gray-900 text-green-400 rounded-lg p-4 font-mono text-sm overflow-x-auto">
                     https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
                   </div>
@@ -287,12 +263,6 @@ function SlackGuide() {
                   <p className="text-gray-600 text-sm mb-3">
                     프로필 아이콘 → 설정 → <strong>"코치 연동 설정"</strong> 섹션으로 이동하세요.
                   </p>
-                  <img
-                    src="/guide-images/slack-step4-2.png"
-                    alt="EatMe 설정 화면"
-                    className="rounded-lg border border-gray-200 w-full"
-                    onError={(e) => { e.currentTarget.style.display = 'none' }}
-                  />
                 </div>
 
                 <div>
