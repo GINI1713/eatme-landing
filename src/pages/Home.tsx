@@ -475,8 +475,9 @@ function HomePage() {
               <div className="bg-white/20 rounded-lg p-3 mb-4">
                 <p className="text-sm font-semibold mb-1">📝 이용 방법</p>
                 <ol className="text-xs text-amber-50 space-y-1">
-                  <li>1. 전문가 인증 신청 → 승인 시 <strong>1개월 무료</strong></li>
-                  <li>2. 사용 후기 작성 → <strong>6개월 추가 연장</strong></li>
+                  <li>1. 전문가 인증 신청 → 승인 시 <strong>1개월 무료 체험</strong></li>
+                  <li>2. 체험 종료 후 <strong>7일 내</strong> 후기 작성 → <strong>6개월 연장</strong></li>
+                  <li className="text-amber-200">※ 7일 내 미작성 시 PRO 모드 종료</li>
                 </ol>
               </div>
               <ul className="space-y-3 mb-8">
