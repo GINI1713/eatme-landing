@@ -89,47 +89,54 @@ function SlackGuide() {
               <div className="bg-purple-600 text-white px-6 py-4">
                 <h2 className="text-xl font-bold flex items-center gap-3">
                   <span className="bg-white text-purple-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span>
-                  Slack 앱 생성하기
+                  Slack 채널에 Webhook 추가하기
                 </h2>
               </div>
               <div className="p-6 space-y-6">
-                <div>
-                  <h3 className="font-semibold mb-2">1-1. Slack API 페이지 접속</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <a href="https://api.slack.com/apps" target="_blank" rel="noopener noreferrer" className="text-purple-600 underline">api.slack.com/apps</a>에 접속하세요.
-                    Slack 계정으로 로그인이 필요합니다.
+                <div className="bg-green-50 rounded-lg p-4 mb-4">
+                  <p className="text-green-800 text-sm">
+                    ✨ <strong>가장 간단한 방법!</strong> Slack 앱을 직접 만들 필요 없이, Slack에서 제공하는 Incoming Webhooks를 바로 사용합니다.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="font-semibold mb-2">1-2. "Create New App" 클릭</h3>
+                  <h3 className="font-semibold mb-2">1-1. Slack 워크스페이스 열기</h3>
                   <p className="text-gray-600 text-sm mb-3">
-                    오른쪽 상단의 <strong>"Create New App"</strong> 버튼을 클릭하세요.
+                    데스크탑 Slack 앱 또는 <a href="https://slack.com" target="_blank" rel="noopener noreferrer" className="text-purple-600 underline">slack.com</a>에서 워크스페이스에 로그인하세요.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">Create New App 버튼 위치</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/slack-step1-2.png</p>
-                    </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">1-2. 알림받을 채널 선택</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    식단 알림을 받을 채널로 이동하세요. 새 채널을 만들어도 됩니다. (예: <strong>#식단관리</strong>)
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">1-3. 채널 설정 열기</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    채널 이름을 클릭 → 상단 탭에서 <strong>"통합"</strong> (또는 "Integrations") 클릭
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">1-4. "앱 추가" 클릭</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>"앱 추가"</strong> (Add an App) 버튼을 클릭하세요.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">1-5. "Incoming WebHooks" 검색 및 추가</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    검색창에 <strong>"Incoming WebHooks"</strong>를 입력하고, 해당 앱을 <strong>"추가"</strong>하세요.
+                  </p>
+                  <div className="bg-amber-50 rounded-lg p-4">
+                    <p className="text-amber-800 text-sm">
+                      💡 <strong>참고:</strong> "Incoming WebHooks"는 Slack에서 공식 제공하는 앱입니다. 별도 설치 없이 바로 사용 가능해요!
+                    </p>
                   </div>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold mb-2">1-3. "From scratch" 선택</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    팝업에서 <strong>"From scratch"</strong>를 선택하세요.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold mb-2">1-4. 앱 정보 입력</h3>
-                  <ul className="text-gray-600 text-sm space-y-2 mb-3">
-                    <li>• <strong>App Name:</strong> "EatMe Coach" (원하는 이름)</li>
-                    <li>• <strong>Workspace:</strong> 알림을 받을 워크스페이스 선택</li>
-                  </ul>
-                  <p className="text-gray-600 text-sm">
-                    입력 후 <strong>"Create App"</strong> 버튼을 누르세요.
-                  </p>
                 </div>
               </div>
             </section>
@@ -139,60 +146,39 @@ function SlackGuide() {
               <div className="bg-purple-600 text-white px-6 py-4">
                 <h2 className="text-xl font-bold flex items-center gap-3">
                   <span className="bg-white text-purple-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span>
-                  Incoming Webhook 활성화하기
+                  Webhook URL 생성하기
                 </h2>
               </div>
               <div className="p-6 space-y-6">
                 <div>
-                  <h3 className="font-semibold mb-2">2-1. 왼쪽 메뉴에서 "Incoming Webhooks" 클릭</h3>
+                  <h3 className="font-semibold mb-2">2-1. Slack 앱 디렉토리 페이지 열림</h3>
                   <p className="text-gray-600 text-sm mb-3">
-                    앱 설정 페이지 왼쪽 사이드바에서 <strong>"Incoming Webhooks"</strong>를 찾아 클릭하세요.
+                    Incoming WebHooks 앱을 추가하면 Slack 앱 디렉토리 페이지가 열립니다.
                   </p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">Incoming Webhooks 메뉴 위치</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/slack-step2-1.png</p>
-                    </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">2-2. "Add to Slack" 또는 "Slack에 추가" 클릭</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>"Add to Slack"</strong> 버튼을 클릭하세요.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">2-3. 채널 선택</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    알림을 받을 채널을 드롭다운에서 선택하고 <strong>"Add Incoming WebHooks integration"</strong>을 클릭하세요.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">2-4. Webhook URL 확인</h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    설정 페이지에서 <strong>"Webhook URL"</strong>을 찾으세요. 아래와 같은 형식입니다:
+                  </p>
+                  <div className="bg-gray-900 text-green-400 rounded-lg p-4 font-mono text-sm overflow-x-auto">
+                    https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
                   </div>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold mb-2">2-2. Webhook 활성화</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    상단의 <strong>"Activate Incoming Webhooks"</strong> 토글을 <strong>ON</strong>으로 변경하세요.
-                  </p>
-                  <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center text-gray-400">
-                    <div className="text-center">
-                      <p className="text-sm">토글 ON 상태</p>
-                      <p className="text-xs text-gray-400 mt-1">guide-images/slack-step2-2.png</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold mb-2">2-3. "Add New Webhook to Workspace" 클릭</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    페이지 하단으로 스크롤하여 <strong>"Add New Webhook to Workspace"</strong> 버튼을 클릭하세요.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold mb-2">2-4. 알림받을 채널 선택</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    식단 알림을 받을 채널을 선택하세요. 예: <strong>#식단관리</strong> 또는 <strong>#회원-식단</strong>
-                  </p>
-                  <div className="bg-amber-50 rounded-lg p-4">
-                    <p className="text-amber-800 text-sm">
-                      💡 <strong>팁:</strong> 새 채널을 만들어서 식단 알림 전용으로 사용하면 정리가 편해요!
-                    </p>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold mb-2">2-5. "허용" (Allow) 클릭</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    권한 요청 화면에서 <strong>"허용"</strong> 버튼을 누르세요.
-                  </p>
                 </div>
               </div>
             </section>
