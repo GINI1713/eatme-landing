@@ -438,6 +438,11 @@ function SheetsGuide() {
             <h2 className="font-bold text-lg mb-4 text-red-900">🔧 문제가 발생했나요?</h2>
             <div className="space-y-4 text-sm">
               <div>
+                <p className="font-semibold text-red-800">Q. "$ is not defined" 에러가 나와요</p>
+                <p className="text-red-700">→ 코드를 복사할 때 다른 내용이 섞였을 수 있어요. Code.gs 파일의 내용을 <strong>전부 삭제</strong>하고 위의 코드만 다시 붙여넣으세요.</p>
+                <p className="text-red-700 mt-1">→ 또한 <strong>"실행" 버튼으로 테스트하지 마세요!</strong> doPost 함수는 웹 요청으로만 작동합니다. 배포 후 EatMe 앱에서 테스트해야 합니다.</p>
+              </div>
+              <div>
                 <p className="font-semibold text-red-800">Q. 데이터가 저장되지 않아요</p>
                 <p className="text-red-700">→ "액세스 권한이 있는 사용자"가 "모든 사용자"로 설정되어 있는지 확인하세요.</p>
               </div>
