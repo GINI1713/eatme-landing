@@ -12,14 +12,11 @@ function SheetsGuide() {
     // 첫 번째 행이 비어있으면 헤더 추가
     if (sheet.getLastRow() === 0) {
       sheet.appendRow([
-        '날짜/시간',
+        '날짜',
+        '시간',
         '회원 이름',
         '음식명',
-        '칼로리',
-        '탄수화물(g)',
-        '단백질(g)',
-        '지방(g)',
-        '기분',
+        'AI 분석',
         '메모',
         '사진 URL'
       ]);
@@ -27,15 +24,12 @@ function SheetsGuide() {
 
     // 새 행 추가
     sheet.appendRow([
-      data.timestamp || new Date().toLocaleString('ko-KR'),
-      data.memberName || '',
+      data.date || '',
+      data.time || '',
+      data.patientName || '',
       data.foodName || '',
-      data.calories || '',
-      data.carbs || '',
-      data.protein || '',
-      data.fat || '',
-      data.mood || '',
-      data.memo || '',
+      data.aiAnalysis || '',
+      data.userComment || '',
       data.imageUrl || ''
     ]);
 
@@ -111,36 +105,30 @@ function SheetsGuide() {
                 <table className="w-full text-xs border-collapse">
                   <thead>
                     <tr className="bg-green-600 text-white">
-                      <th className="border border-green-700 px-2 py-1">날짜/시간</th>
+                      <th className="border border-green-700 px-2 py-1">날짜</th>
+                      <th className="border border-green-700 px-2 py-1">시간</th>
                       <th className="border border-green-700 px-2 py-1">회원</th>
                       <th className="border border-green-700 px-2 py-1">음식명</th>
-                      <th className="border border-green-700 px-2 py-1">칼로리</th>
-                      <th className="border border-green-700 px-2 py-1">탄수화물</th>
-                      <th className="border border-green-700 px-2 py-1">단백질</th>
-                      <th className="border border-green-700 px-2 py-1">지방</th>
-                      <th className="border border-green-700 px-2 py-1">기분</th>
+                      <th className="border border-green-700 px-2 py-1">AI 분석</th>
+                      <th className="border border-green-700 px-2 py-1">메모</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="bg-white">
-                      <td className="border border-gray-300 px-2 py-1">2026.02.06 12:30</td>
+                      <td className="border border-gray-300 px-2 py-1">2026.02.06</td>
+                      <td className="border border-gray-300 px-2 py-1">12:30</td>
                       <td className="border border-gray-300 px-2 py-1">김철수</td>
                       <td className="border border-gray-300 px-2 py-1">닭가슴살 샐러드</td>
-                      <td className="border border-gray-300 px-2 py-1">350</td>
-                      <td className="border border-gray-300 px-2 py-1">15</td>
-                      <td className="border border-gray-300 px-2 py-1">40</td>
-                      <td className="border border-gray-300 px-2 py-1">12</td>
-                      <td className="border border-gray-300 px-2 py-1">😊</td>
+                      <td className="border border-gray-300 px-2 py-1">약 350kcal...</td>
+                      <td className="border border-gray-300 px-2 py-1">점심</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="border border-gray-300 px-2 py-1">2026.02.06 19:00</td>
+                      <td className="border border-gray-300 px-2 py-1">2026.02.06</td>
+                      <td className="border border-gray-300 px-2 py-1">19:00</td>
                       <td className="border border-gray-300 px-2 py-1">이영희</td>
                       <td className="border border-gray-300 px-2 py-1">비빔밥</td>
-                      <td className="border border-gray-300 px-2 py-1">550</td>
-                      <td className="border border-gray-300 px-2 py-1">70</td>
-                      <td className="border border-gray-300 px-2 py-1">18</td>
-                      <td className="border border-gray-300 px-2 py-1">15</td>
-                      <td className="border border-gray-300 px-2 py-1">😌</td>
+                      <td className="border border-gray-300 px-2 py-1">약 550kcal...</td>
+                      <td className="border border-gray-300 px-2 py-1">저녁</td>
                     </tr>
                   </tbody>
                 </table>
