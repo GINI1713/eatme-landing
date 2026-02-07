@@ -346,32 +346,22 @@ function NotionGuide() {
               <div className="bg-white rounded-lg p-4">
                 <p className="font-semibold text-gray-900 mb-2">기본 정보</p>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• 회원 이름 (닉네임)</li>
-                  <li>• 기록 날짜/시간</li>
-                  <li>• 식사 타입 (아침/점심/저녁/간식)</li>
+                  <li>• <strong>제목</strong> — 닉네임_전화번호끝4자리_날짜_식사구분</li>
+                  <li>• <strong>닉네임</strong> — 회원 닉네임</li>
+                  <li>• <strong>촬영 일시</strong> — 2026-02-07 12:30 형식</li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-4">
-                <p className="font-semibold text-gray-900 mb-2">AI 분석 결과</p>
+                <p className="font-semibold text-gray-900 mb-2">식사 정보</p>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• 음식명</li>
-                  <li>• 추정 칼로리</li>
-                  <li>• 탄수화물/단백질/지방</li>
+                  <li>• <strong>식사 구분</strong> — 아침/점심/저녁/간식</li>
+                  <li>• <strong>코멘트</strong> — 회원이 입력한 메모</li>
                 </ul>
               </div>
-              <div className="bg-white rounded-lg p-4">
-                <p className="font-semibold text-gray-900 mb-2">추가 정보</p>
-                <ul className="text-gray-600 space-y-1">
-                  <li>• 기분 이모지</li>
-                  <li>• 사용자 메모</li>
-                  <li>• AI 피드백 요약</li>
-                </ul>
-              </div>
-              <div className="bg-white rounded-lg p-4">
+              <div className="bg-white rounded-lg p-4 md:col-span-2">
                 <p className="font-semibold text-gray-900 mb-2">미디어</p>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• 음식 사진 URL</li>
-                  <li>• 원본 게시물 링크</li>
+                  <li>• <strong>사진</strong> — 음식 사진 파일 (Notion에 직접 업로드됨)</li>
                 </ul>
               </div>
             </div>
