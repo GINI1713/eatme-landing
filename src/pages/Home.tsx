@@ -459,16 +459,26 @@ function HomePage() {
 
             {/* PRO Plan - PRO 모드 */}
             <div className="bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl p-8 text-white relative overflow-hidden">
-              <div className="absolute top-4 right-4 bg-white/20 px-3 py-1 rounded-full text-sm">인기</div>
+              <div className="absolute top-4 right-4 bg-white/20 px-3 py-1 rounded-full text-sm">🎁 무료 체험</div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-2xl">👑</span>
                 <h3 className="text-2xl font-bold">PRO 모드</h3>
               </div>
               <p className="text-amber-100 mb-4">코치, 트레이너, 영양사를 위한 전문 도구</p>
-              <div className="text-4xl font-bold mb-4">₩4,900<span className="text-lg font-normal text-amber-100">/월</span></div>
-              <p className="text-amber-50 text-sm mb-6 leading-relaxed">
+              <div className="mb-4">
+                <div className="text-4xl font-bold">무료 체험</div>
+                <p className="text-amber-100 text-sm mt-1">전문가 인증 시 1개월 무료 제공</p>
+              </div>
+              <p className="text-amber-50 text-sm mb-4 leading-relaxed">
                 다수의 회원을 체계적으로 관리하는 코치, 트레이너, 영양사를 위한 전문 도구입니다. 회원의 식단 데이터를 외부 서비스에 자동 연동하고, 기록을 안전하게 보관·분석할 수 있습니다.
               </p>
+              <div className="bg-white/20 rounded-lg p-3 mb-4">
+                <p className="text-sm font-semibold mb-1">📝 이용 방법</p>
+                <ol className="text-xs text-amber-50 space-y-1">
+                  <li>1. 전문가 인증 신청 → 승인 시 <strong>1개월 무료</strong></li>
+                  <li>2. 사용 후기 작성 → <strong>6개월 추가 연장</strong></li>
+                </ol>
+              </div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
                   <span>✓</span> 일반 모드 기능 전부 포함
@@ -489,8 +499,8 @@ function HomePage() {
                   <span>✓</span> 회원별 식단 코칭 코멘트 및 데이터 관리
                 </li>
               </ul>
-              <a href="https://eatme.co.kr" className="block text-center bg-white hover:bg-gray-100 text-amber-600 py-3 rounded-full font-medium transition-colors">
-                PRO 시작하기
+              <a href="https://eatme.co.kr/pro" className="block text-center bg-white hover:bg-gray-100 text-amber-600 py-3 rounded-full font-medium transition-colors">
+                무료 체험 신청하기
               </a>
             </div>
           </div>
