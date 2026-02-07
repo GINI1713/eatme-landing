@@ -559,7 +559,7 @@ function HomePage() {
             <div className="flex gap-6 text-sm">
               <a href="https://eatme.co.kr/privacy" className="hover:text-white transition-colors">개인정보처리방침</a>
               <a href="https://eatme.co.kr/terms" className="hover:text-white transition-colors">이용약관</a>
-              <a href="mailto:support@eatme.coach" className="hover:text-white transition-colors">문의하기</a>
+              <a href="mailto:gini@yulimkm.com" className="hover:text-white transition-colors">문의하기</a>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">

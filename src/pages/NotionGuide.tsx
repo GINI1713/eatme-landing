@@ -391,7 +391,7 @@ function NotionGuide() {
               </div>
               <div>
                 <p className="font-semibold text-red-800">Q. 계속 문제가 있어요</p>
-                <p className="text-red-700">→ <a href="mailto:support@eatme.coach" className="underline">support@eatme.coach</a>로 문의해주세요.</p>
+                <p className="text-red-700">→ <a href="mailto:gini@yulimkm.com" className="underline">gini@yulimkm.com</a>로 문의해주세요.</p>
               </div>
             </div>
           </div>
