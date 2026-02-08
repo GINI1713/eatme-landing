@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom'
 
 function HomePage() {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -11,10 +18,10 @@ function HomePage() {
             <span className="font-bold text-xl">EatMe Coach</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#use-cases" className="text-gray-600 hover:text-gray-900">사용 사례</a>
-            <a href="#how-to-use" className="text-gray-600 hover:text-gray-900">사용법</a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900">요금제</a>
-            <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
+            <button onClick={() => scrollTo('use-cases')} className="text-gray-600 hover:text-gray-900">사용 사례</button>
+            <button onClick={() => scrollTo('how-to-use')} className="text-gray-600 hover:text-gray-900">사용법</button>
+            <button onClick={() => scrollTo('pricing')} className="text-gray-600 hover:text-gray-900">요금제</button>
+            <button onClick={() => scrollTo('faq')} className="text-gray-600 hover:text-gray-900">FAQ</button>
           </div>
           <a
             href="https://eatme.co.kr"
