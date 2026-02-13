@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/eatme-landing/', // GitHub Pages 리포 이름
+  base: process.env.VERCEL ? '/' : '/eatme-landing/',
 })
