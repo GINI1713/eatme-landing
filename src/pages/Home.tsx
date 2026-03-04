@@ -23,12 +23,6 @@ function HomePage() {
             <button onClick={() => scrollTo('pricing')} className="text-gray-600 hover:text-gray-900">요금제</button>
             <button onClick={() => scrollTo('faq')} className="text-gray-600 hover:text-gray-900">FAQ</button>
           </div>
-          <a
-            href="https://eatme.co.kr"
-            className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
-          >
-            시작하기
-          </a>
         </div>
       </nav>
 
@@ -551,9 +545,6 @@ function HomePage() {
                   <span>✗</span> MCP · API AI 분석 연동
                 </li>
               </ul>
-              <a href="https://eatme.co.kr" className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-full font-medium transition-colors">
-                무료로 시작하기
-              </a>
             </div>
 
             {/* PRO Plan - PRO 모드 */}
@@ -598,9 +589,6 @@ function HomePage() {
                   <span>✓</span> 초대 코드로 간편한 회원 연결
                 </li>
               </ul>
-              <a href="https://eatme.co.kr/pro" className="block text-center bg-white hover:bg-gray-100 text-amber-600 py-3 rounded-full font-medium transition-colors">
-                무료 체험 신청하기
-              </a>
             </div>
           </div>
         </div>
