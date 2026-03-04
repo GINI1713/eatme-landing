@@ -436,7 +436,7 @@ function HomePage() {
                   <span className="text-2xl">🔑</span>
                   <h4 className="font-bold text-lg">개인 API 키</h4>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">개인 Gemini API 키를 등록하면 코치 대시보드에서 회원 데이터를 직접 AI 분석할 수 있습니다.</p>
+                <p className="text-gray-600 text-sm mb-4">OpenAI, Claude, Gemini 등 개인 AI API 키를 등록하면 코치 대시보드에서 회원 데이터를 직접 분석할 수 있습니다.</p>
                 <ul className="text-gray-600 text-sm space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="text-blue-500">✓</span>
@@ -486,8 +486,12 @@ function HomePage() {
                 AI 식단 분석, 건강 앱 연동, 리포트 등 핵심 기능을 무료로 이용하세요. 코치에게 식단을 공유받는 건 무제한, 내가 다른 사람을 관리하는 건 5명까지.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-2 text-gray-600">
-                  <span className="text-green-500">✓</span> AI 식단 분석 (하루 10개)
+                <li className="flex items-start gap-2 text-gray-600">
+                  <span className="text-green-500 mt-0.5">✓</span>
+                  <div>
+                    <span>AI 식단 분석</span>
+                    <p className="text-xs text-gray-400 mt-0.5">Lv.1: 4개/일, Lv.2: 8개/일, Lv.3+: 12개/일</p>
+                  </div>
                 </li>
                 <li className="flex items-center gap-2 text-gray-600">
                   <span className="text-green-500">✓</span> Apple Health / Google Fit 연동
@@ -510,6 +514,9 @@ function HomePage() {
                     <span>다른 사람 식단 관리 <span className="text-amber-600 font-medium">5명까지</span></span>
                     <p className="text-xs text-gray-400 mt-0.5">예: 자녀, 부모님, 친구 등 가족/지인 케어</p>
                   </div>
+                </li>
+                <li className="flex items-center gap-2 text-gray-400">
+                  <span>✗</span> 상대방 건강기록 열람
                 </li>
                 <li className="flex items-center gap-2 text-gray-400">
                   <span>✗</span> MCP · API AI 분석 연동
@@ -548,13 +555,16 @@ function HomePage() {
                   <span>✓</span> 일반 모드 기능 전부 포함
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
-                  <span>✓</span> 무제한 회원 관리 및 1:1 케어
+                  <span>✓</span> 무제한 회원 관리 및 식단 분석
+                </li>
+                <li className="flex items-center gap-2 font-semibold">
+                  <span>✓</span> 회원 건강기록 열람 (혈당·심박수·수면·체중 등)
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
                   <span>✓</span> MCP 연동 (Claude, Notion AI로 데이터 분석)
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
-                  <span>✓</span> 개인 API 키로 대시보드 직접 AI 분석
+                  <span>✓</span> 개인 AI API 키 연동 (OpenAI · Claude · Gemini)
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
                   <span>✓</span> 회원별 코칭 코멘트 & 데이터 관리
