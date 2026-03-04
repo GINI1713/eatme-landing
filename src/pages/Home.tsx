@@ -224,24 +224,24 @@ function HomePage() {
             {/* Use Case 3 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">🏥</div>
-              <h3 className="text-xl font-bold mb-2">당뇨/심혈관 환자 관리하는 의료진</h3>
-              <p className="text-amber-600 font-medium mb-4">"외래 한 달에 한 번, 그 사이 뭘 먹는지 알 수가 없었어요"</p>
+              <h3 className="text-xl font-bold mb-2">환자의 식단·건강 데이터가 필요한 의료진</h3>
+              <p className="text-amber-600 font-medium mb-4">"진료와 진료 사이, 환자가 뭘 먹고 어떻게 지내는지 알고 싶었어요"</p>
               <ul className="text-gray-600 space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  환자가 매 끼니 기록 → 의사 대시보드에 축적
+                  환자가 매 끼니 사진 기록 → 의료진에게 자동 공유
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  혈당·심박수·수면 데이터와 식단을 함께 분석
+                  혈당·심박수·수면·체중 등 건강 데이터와 식단을 종합 분석
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  다음 진료 때 데이터 기반 상담
+                  다음 진료 때 실제 데이터 기반 상담 가능
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  CSV/Google Sheets 연동으로 EMR 연계 가능
+                  CSV 내보내기 / Google Sheets 연동으로 기록 관리
                 </li>
               </ul>
             </div>
