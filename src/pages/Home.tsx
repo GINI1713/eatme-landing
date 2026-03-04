@@ -483,7 +483,7 @@ function HomePage() {
               <p className="text-amber-500 font-semibold mb-4">개인 사용자에게 충분해요 ✨</p>
               <div className="text-4xl font-bold mb-4">₩0<span className="text-lg font-normal text-gray-500">/월</span></div>
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                AI 식단 분석, 건강 앱 연동, 리포트 등 핵심 기능을 무료로 이용하세요. 코치에게 식단을 공유받는 건 무제한, 내가 다른 사람을 관리하는 건 5명까지.
+                AI 식단 분석, 건강 앱 연동, 리포트 등 핵심 기능을 무료로 이용하세요. 코치에게 식단을 공유받는 건 무제한, 다른 사람 식단을 열람하는 건 5명까지.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-2 text-gray-600">
