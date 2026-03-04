@@ -170,7 +170,32 @@ function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Use Case 1 */}
+            {/* Use Case 1 - 혈당·건강 관리 */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow border-2 border-amber-100">
+              <div className="text-4xl mb-4">🩸</div>
+              <h3 className="text-xl font-bold mb-2">혈당과 식단의 관계가 궁금한 분</h3>
+              <p className="text-amber-600 font-medium mb-4">"어떤 음식이 내 혈당을 올리는지 정확히 알고 싶어요"</p>
+              <ul className="text-gray-600 space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500">✓</span>
+                  Apple Health / Google Fit에서 혈당 데이터 자동 연동
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500">✓</span>
+                  식사 기록과 혈당 변화를 AI가 종합 분석
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500">✓</span>
+                  "이 식단 후 혈당이 급등했어요" 패턴 알림
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500">✓</span>
+                  심박수·수면·체중까지 종합 건강 리포트
+                </li>
+              </ul>
+            </div>
+
+            {/* Use Case 2 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">💪</div>
               <h3 className="text-xl font-bold mb-2">헬스 트레이너 & 다이어트 코치</h3>
@@ -270,7 +295,7 @@ function HomePage() {
               </ul>
             </div>
 
-            {/* Use Case 5 */}
+            {/* Use Case 6 - 급식 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">🏫</div>
               <h3 className="text-xl font-bold mb-2">어린이집 / 유치원 급식 관리</h3>
