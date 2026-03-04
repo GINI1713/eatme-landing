@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 
 function HomePage() {
   const scrollTo = (id: string) => {
@@ -402,66 +401,62 @@ function HomePage() {
             </div>
           </div>
 
-          {/* 자동화 연동 가이드 */}
+          {/* PRO 모드 AI 분석 */}
           <div className="mt-8 bg-white rounded-2xl p-8 border border-gray-200">
-            <h3 className="text-xl font-bold mb-2 text-center">⚡ PRO 모드: 자동화 연동</h3>
-            <p className="text-gray-500 text-sm text-center mb-8">회원이 식사 사진을 올리면, 코치의 외부 서비스로 자동 전송됩니다</p>
+            <h3 className="text-xl font-bold mb-2 text-center">⚡ PRO 모드: AI 데이터 분석</h3>
+            <p className="text-gray-500 text-sm text-center mb-8">회원 데이터를 외부 AI 또는 대시보드에서 직접 분석하세요</p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Notion */}
-              <Link to="/guide/notion" className="block bg-gray-50 rounded-xl p-5 hover:bg-amber-50 hover:border-amber-200 border-2 border-transparent transition-all group">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-2xl">📝</span>
-                  <h4 className="font-bold">Notion</h4>
-                </div>
-                <p className="text-gray-600 text-sm mb-4">식단 기록을 Notion DB에 자동 저장</p>
-                <div className="flex items-center gap-1 text-amber-600 font-medium text-sm group-hover:gap-2 transition-all">
-                  <span>가이드 보기</span>
-                  <span>→</span>
-                </div>
-              </Link>
-
-              {/* Slack */}
-              <Link to="/guide/slack" className="block bg-gray-50 rounded-xl p-5 hover:bg-amber-50 hover:border-amber-200 border-2 border-transparent transition-all group">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-2xl">💬</span>
-                  <h4 className="font-bold">Slack</h4>
-                </div>
-                <p className="text-gray-600 text-sm mb-4">식사 기록이 Slack 채널에 실시간 알림</p>
-                <div className="flex items-center gap-1 text-amber-600 font-medium text-sm group-hover:gap-2 transition-all">
-                  <span>가이드 보기</span>
-                  <span>→</span>
-                </div>
-              </Link>
-
-              {/* Google Sheets */}
-              <Link to="/guide/sheets" className="block bg-gray-50 rounded-xl p-5 hover:bg-amber-50 hover:border-amber-200 border-2 border-transparent transition-all group">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-2xl">📊</span>
-                  <h4 className="font-bold">Google Sheets</h4>
-                </div>
-                <p className="text-gray-600 text-sm mb-4">스프레드시트에 데이터 축적 → 차트/분석</p>
-                <div className="flex items-center gap-1 text-amber-600 font-medium text-sm group-hover:gap-2 transition-all">
-                  <span>가이드 보기</span>
-                  <span>→</span>
-                </div>
-              </Link>
-
-              {/* MCP / API */}
-              <div className="bg-gradient-to-br from-purple-50 to-white rounded-xl p-5 border-2 border-purple-100">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* MCP 연동 */}
+              <div className="bg-gradient-to-br from-purple-50 to-white rounded-xl p-6 border-2 border-purple-100">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-2xl">🤖</span>
-                  <h4 className="font-bold">MCP · API 연동</h4>
-                  <span className="text-[10px] bg-purple-100 text-purple-600 px-1.5 py-0.5 rounded-full font-semibold">NEW</span>
+                  <h4 className="font-bold text-lg">MCP AI 연동</h4>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">Claude/Notion AI에서 데이터 분석하거나, 개인 API 키로 코치 대시보드에서 직접 분석</p>
-                <p className="text-purple-600 font-medium text-sm">앱 내 가이드 제공</p>
+                <p className="text-gray-600 text-sm mb-4">Claude, Notion AI 등 외부 AI에 EatMe 데이터를 연결해서 회원 식단과 건강 데이터를 자연어로 분석하세요.</p>
+                <ul className="text-gray-600 text-sm space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-500">✓</span>
+                    "이번 주 김회원 식단 분석해줘" 같은 자연어 질의
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-500">✓</span>
+                    식단 + 건강 데이터 종합 리포트 생성
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-500">✓</span>
+                    앱 내 MCP 설정 가이드 제공
+                  </li>
+                </ul>
+              </div>
+
+              {/* 개인 API */}
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border-2 border-blue-100">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl">🔑</span>
+                  <h4 className="font-bold text-lg">개인 API 키</h4>
+                </div>
+                <p className="text-gray-600 text-sm mb-4">개인 Gemini API 키를 등록하면 코치 대시보드에서 회원 데이터를 직접 AI 분석할 수 있습니다.</p>
+                <ul className="text-gray-600 text-sm space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-500">✓</span>
+                    코치 대시보드에서 바로 AI 분석 실행
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-500">✓</span>
+                    회원별 맞춤 분석 & 코칭 코멘트
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-500">✓</span>
+                    CSV 데이터 내보내기로 외부 분석 가능
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div className="mt-8 bg-amber-50 rounded-xl p-4 text-center">
               <p className="text-sm text-amber-800">
-                💡 <strong>작동 원리:</strong> 연결된 회원이 식사를 기록하면 → 코치의 외부 서비스로 자동 전송 → 별도 작업 없이 데이터 축적
+                💡 <strong>PRO 코치는</strong> 무제한 회원 관리 + AI 분석 도구로 더 효율적인 1:1 케어가 가능합니다
               </p>
             </div>
           </div>
@@ -517,7 +512,7 @@ function HomePage() {
                   </div>
                 </li>
                 <li className="flex items-center gap-2 text-gray-400">
-                  <span>✗</span> Notion/Slack/Sheets/MCP/API 연동
+                  <span>✗</span> MCP · API AI 분석 연동
                 </li>
               </ul>
               <a href="https://eatme.co.kr" className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-full font-medium transition-colors">
@@ -538,7 +533,7 @@ function HomePage() {
                 <p className="text-amber-100 text-sm mt-1">전문가 인증 시 1개월 무료 제공</p>
               </div>
               <p className="text-amber-50 text-sm mb-4 leading-relaxed">
-                다수의 회원을 체계적으로 관리하는 전문가를 위한 도구입니다. 외부 서비스 자동 연동, MCP AI 분석, 데이터 관리 기능을 제공합니다.
+                다수의 회원을 체계적으로 관리하는 전문가를 위한 도구입니다. MCP·API를 통한 AI 데이터 분석과 무제한 회원 관리 기능을 제공합니다.
               </p>
               <div className="bg-white/20 rounded-lg p-3 mb-4">
                 <p className="text-sm font-semibold mb-1">📝 이용 방법</p>
@@ -556,10 +551,10 @@ function HomePage() {
                   <span>✓</span> 무제한 회원 관리 및 1:1 케어
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
-                  <span>✓</span> Notion · Slack · Google Sheets 자동 연동
+                  <span>✓</span> MCP 연동 (Claude, Notion AI로 데이터 분석)
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
-                  <span>✓</span> MCP · API 연동 (Claude/Notion AI 분석, 대시보드 직접 분석)
+                  <span>✓</span> 개인 API 키로 대시보드 직접 AI 분석
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
                   <span>✓</span> 회원별 코칭 코멘트 & 데이터 관리
