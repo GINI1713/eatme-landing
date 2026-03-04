@@ -511,7 +511,7 @@ function HomePage() {
                 <li className="flex items-start gap-2 text-gray-600">
                   <span className="text-green-500 mt-0.5">✓</span>
                   <div>
-                    <span>다른 사람 식단 관리 <span className="text-amber-600 font-medium">5명까지</span></span>
+                    <span>다른 사람 식단 열람 <span className="text-amber-600 font-medium">5명까지</span></span>
                     <p className="text-xs text-gray-400 mt-0.5">예: 자녀, 부모님, 친구 등 가족/지인 케어</p>
                   </div>
                 </li>
