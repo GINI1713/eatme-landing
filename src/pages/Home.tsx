@@ -179,7 +179,7 @@ function HomePage() {
               <ul className="text-gray-600 space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  회원이 사진 찍으면 → 코치에게 푸시 알림 + Notion 자동 전송
+                  회원이 사진 찍으면 → 코치에게 실시간 푸시 알림
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
@@ -191,7 +191,7 @@ function HomePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  MCP 연동으로 Claude AI가 회원 데이터 분석
+                  MCP/API 연동으로 AI가 회원 데이터 직접 분석
                 </li>
               </ul>
             </div>
@@ -447,14 +447,14 @@ function HomePage() {
                 </div>
               </Link>
 
-              {/* MCP */}
+              {/* MCP / API */}
               <div className="bg-gradient-to-br from-purple-50 to-white rounded-xl p-5 border-2 border-purple-100">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-2xl">🤖</span>
-                  <h4 className="font-bold">MCP AI 연동</h4>
+                  <h4 className="font-bold">MCP · API 연동</h4>
                   <span className="text-[10px] bg-purple-100 text-purple-600 px-1.5 py-0.5 rounded-full font-semibold">NEW</span>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">Claude, Notion AI 등에서 회원 데이터 직접 조회·분석</p>
+                <p className="text-gray-600 text-sm mb-4">Claude/Notion AI에서 데이터 분석하거나, 개인 API 키로 코치 대시보드에서 직접 분석</p>
                 <p className="text-purple-600 font-medium text-sm">앱 내 가이드 제공</p>
               </div>
             </div>
@@ -517,7 +517,7 @@ function HomePage() {
                   </div>
                 </li>
                 <li className="flex items-center gap-2 text-gray-400">
-                  <span>✗</span> Notion/Slack/Sheets/MCP 연동
+                  <span>✗</span> Notion/Slack/Sheets/MCP/API 연동
                 </li>
               </ul>
               <a href="https://eatme.co.kr" className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-full font-medium transition-colors">
@@ -559,7 +559,7 @@ function HomePage() {
                   <span>✓</span> Notion · Slack · Google Sheets 자동 연동
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
-                  <span>✓</span> MCP AI 연동 (Claude, Notion AI 등)
+                  <span>✓</span> MCP · API 연동 (Claude/Notion AI 분석, 대시보드 직접 분석)
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
                   <span>✓</span> 회원별 코칭 코멘트 & 데이터 관리
