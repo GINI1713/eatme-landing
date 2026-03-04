@@ -265,32 +265,36 @@ function HomePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  CSV 내보내기 / Google Sheets 연동으로 기록 관리
+                  CSV 내보내기로 기록 관리 및 외부 분석 활용
                 </li>
               </ul>
             </div>
 
-            {/* Use Case 4 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">👩‍💼</div>
-              <h3 className="text-xl font-bold mb-2">혼자 다이어트하는 직장인</h3>
-              <p className="text-amber-600 font-medium mb-4">"매번 작심삼일... 누가 좀 봐주면 좋겠다"</p>
+            {/* Use Case 4 - 개인 사용자 */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow border-2 border-green-100">
+              <div className="text-4xl mb-4">🧘</div>
+              <h3 className="text-xl font-bold mb-2">혼자서도 꾸준히 건강 관리하고 싶은 분</h3>
+              <p className="text-amber-600 font-medium mb-4">"매번 작심삼일... 재밌고 쉽게 습관을 만들고 싶어요"</p>
               <ul className="text-gray-600 space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  사진 찍으면 AI가 바로 피드백
+                  사진 찍으면 AI가 바로 피드백 — 건강 모드 / 다이어트 모드 선택 가능
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  Apple Health/Google Fit 연동으로 운동량도 함께 분석
+                  식사할 때 기분(😊😐😢)도 함께 기록 → 감정과 식습관 패턴 발견
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  업적 시스템으로 꾸준한 동기 부여
+                  3일·7일·30일·100일 연속 기록 업적으로 동기 부여 🏆
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-500">✓</span>
-                  Dr. Y 챗봇이 24시간 응원 & 맞춤 조언
+                  Dr. Y 챗봇이 24시간 맞춤 조언 & 응원
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500">✓</span>
+                  일간·주간·월간 AI 리포트로 내 식습관 변화 추적
                 </li>
               </ul>
             </div>
